@@ -1,0 +1,33 @@
+/*
+Theme Name:   Planty Child Theme
+Theme URI:    
+Description:  Planty child theme
+Author:       Selim
+Author URI:   
+Template:     planty
+Version:      1.0.0
+Text Domain:  plantychild
+*/
+
+.title-color {
+    color: green;
+    width: 781px;
+    height: 92px;
+  }
+  
+
+.apropos h2{
+    color: green;}
+
+.gouts{
+    background-color: #ECE2DA;
+    }
+
+.couleurgouts{
+    color: red;
+}
+
+
+.avis {
+    color: green;
+}
