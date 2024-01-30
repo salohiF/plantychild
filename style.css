@@ -8,3 +8,200 @@ Template:     planty
 Version:      1.0.0
 Text Domain:  plantychild
 */
+:root{
+    --bs-body-font-family: 'Syne', sans-serif !important;
+}
+html,body{
+    font-family: 'Syne', sans-serif;
+    /*Pour eviter le scroll Horizontal*/
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+main#main{
+    padding: 0;
+}    
+
+h1 {
+    font-weight: 800;
+}
+.navbar-brand img{
+    width: 200px!important;
+    height: unset !important;
+}
+.canette {
+    position:relative;
+    z-index:1;
+    text-align: center;
+}
+ .canette::before{
+    content: '';
+    background: url(./images/l.png) no-repeat;
+    z-index: -1;
+    bottom: 10px;
+    left: calc(50% - 263px); /*centre: 50% du parent moins la largeur de l'image before*/
+    position: absolute;
+    width: 263px;
+    height: 80%;
+    background-size: contain;
+
+ }
+ .canette::after{
+    content: '';
+    background: url(./images/r.png) no-repeat;
+    z-index: -1;
+    bottom: 10px;
+    left: calc(50% + 22px); /*centre: 50% du parent plus 22px de l'image after*/
+    position: absolute;
+    width: 263px;
+    height: 80%;
+    background-size: contain;
+
+ }
+
+.nav-link.active{
+    background-color: #DC9F96 !important;
+}
+.nav-link:hover{
+    background-color: #6d071a !important;
+    color:#fff !important;
+}
+
+
+
+.wp-block-group__inner-container:first-child{
+    border-bottom-left-radius: 60px;
+}
+
+
+.commander{
+    background-color: #E0B9B4;
+    color:#fff;
+    border-radius: 5px;
+    border: 1px solid #E0B9B4;
+    border-radius:5px;
+}
+
+
+#post-10{
+    background-color:#3B8E46 !important;
+    color: #fff;
+}
+
+#post-10 table td{
+    background-color:#3B8E46 !important;
+}
+
+
+
+/*bordure conteneur cannette page accueil*/
+
+.wp-block-cover{
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.wp-block-cover.has-round-bottom{
+    background-color:#ECE2DA !important;
+    border-bottom: 4px solid #E3D9D0;
+    border-radius: 0% 0% 15% 15%;
+    -webkit-border-radius: 0% 0% 15% 15%;
+    -moz-border-radius: 0% 0% 15% 15%;
+    -moz-border-radius: 0% 0% 15% 15%;
+    -ms-border-radius: 0% 0% 15% 15%;
+    -o-border-radius: 0% 0% 15% 15%;
+}
+
+.pensent{
+    color:#3B8E46;margin-top:60px;margin-bottom:30px;
+    text-align: center;
+}
+
+/*bouton commander sur page accueil*/
+.boutoncommande a{
+    background-color:#E0B9B4 !important;
+    margin-bottom: 40px;
+}
+
+/*bordure du conteneur des goûts sur page accueil*/
+.gouts{
+    background-color: #ECE2DA;
+    border-bottom: 4px solid #FFF;
+    border-radius: 0% 0% 15% 15%;
+    -webkit-border-radius: 0% 0% 15% 15%;
+    -moz-border-radius:0% 0% 15% 15%;
+    -moz-border-radius: 0% 0% 15% 15%;
+    -ms-border-radius: 0% 0% 15% 15%;
+    -o-border-radius: 0% 0% 15% 15%;
+}
+
+/*images des goûts sur la page accueil*/
+.gout .wp-block-cover, .wp-block-cover-image{
+    max-width:400px;
+    height:400px;
+}
+
+
+.quantite-container img{
+    width:75% !important;
+}
+
+
+.rencontrer{
+    background-color:#ECE2DA !important;
+    border-bottom: 4px solid #E3D9D0;
+    border-radius: 0% 0% 30% 30%;
+    -webkit-border-radius: 0% 0% 30% 30%;
+    -moz-border-radius: 0% 0% 30% 30%;
+    -moz-border-radius: 0% 0% 30% 30%;
+    -ms-border-radius: 0% 0% 30% 30%;
+    -o-border-radius: 0% 0% 30% 30%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.rencontrer h2{
+color:#D2776A
+}
+
+.equipe{
+    background: url(./images/l.png) no-repeat;
+    background-position: right 5% bottom 0;
+    background-size: 100px;
+}
+.contact{
+    background-color:#ECE2DA
+}
+
+.colonneGaucheCommande{
+    border-right: 1px solid #fff;
+    padding-left: 35px;
+}
+.colonneDroiteCommande{
+    padding-left: 50px;
+}
+
+.titreCommande{
+    font-size: 30px;
+}
+
+
+
+
+.goutCommande img{
+    width:100%;
+}
+
+.h2Commander{
+    padding:30px 0px;
+}
+
+.NousRencontrer{
+    margin:150px;
+    background-image: url('http://localhost/wp-content/uploads/2024/01/Group-2.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+}
+#menu-principal ul li:nth-child(3) {
+    order: 1;
+}
