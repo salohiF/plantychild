@@ -43,43 +43,19 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'planty' ); ?>">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-
 				<div id="navbar" class="collapse navbar-collapse">
 					<?php
 						// Loading WordPress Custom Menu (theme_location).
-						
-// Check if the user is logged in
-/*if (is_user_logged_in()) {
-    // User is logged in, add custom link to admin dashboard
-    $custom_link = '<li class="nav-item"><a class="nav-link" href="' . admin_url() . '">Admin</a></li>';
-    
-    // Output the navigation menu
-    wp_nav_menu(
-        array(
-            'menu_class'     => 'navbar-nav ms-auto',
-            'container'      => '',
-            'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'         => new WP_Bootstrap_Navwalker(),
-            'theme_location' => 'main-menu',
-            'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s' . $custom_link . '</ul>',
-        )
-    );
-} else {*/
-    // User is not logged in, just output the navigation menu
-    wp_nav_menu(
-        array(
-            'menu_class'     => 'navbar-nav ms-auto',
-            'container'      => '',
-            'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
-            'walker'         => new WP_Bootstrap_Navwalker(),
-            'theme_location' => 'main-menu',
-        )
-    );
-//}
+						wp_nav_menu(
+							array(
+								'menu_class'     => 'navbar-nav ms-auto',
+								'container'      => '',
+								'fallback_cb'    => 'WP_Bootstrap_Navwalker::fallback',
+								'walker'         => new WP_Bootstrap_Navwalker(),
+								'theme_location' => 'main-menu',
+							)
+						);
 
-
-
-						
 					?>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container -->
