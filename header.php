@@ -49,7 +49,7 @@
 						// Loading WordPress Custom Menu (theme_location).
 						
 // Check if the user is logged in
-if (is_user_logged_in()) {
+/*if (is_user_logged_in()) {
     // User is logged in, add custom link to admin dashboard
     $custom_link = '<li class="nav-item"><a class="nav-link" href="' . admin_url() . '">Admin</a></li>';
     
@@ -64,7 +64,7 @@ if (is_user_logged_in()) {
             'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s' . $custom_link . '</ul>',
         )
     );
-} else {
+} else {*/
     // User is not logged in, just output the navigation menu
     wp_nav_menu(
         array(
@@ -75,7 +75,7 @@ if (is_user_logged_in()) {
             'theme_location' => 'main-menu',
         )
     );
-}
+//}
 
 
 

@@ -17,11 +17,7 @@ $page_id = get_option( 'page_for_posts' );
 			edit_post_link( __( 'Edit', 'planty' ), '<span class="edit-link">', '</span>', $page_id );
 		?>
 	</div><!-- /.col -->
-	<div class="col-md-12">
-		<?php
-		///	get_template_part( 'archive', 'loop' );
-		?>
-	</div><!-- /.col -->
+
 </div><!-- /.row -->
 <?php
 get_footer();
