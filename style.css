@@ -20,10 +20,13 @@ body {
     overflow-x: hidden;
 }
 
+
+
 main#main {
     padding: 0;
     margin-top: 0;
 }
+/**/
 
 h1 {
     font-weight: 800;
@@ -68,6 +71,9 @@ h1 {
 
 }
 
+/*Cible les éléments de classe nav-link qui ont également la classe active.
+Lorsque cet élément est actif, son arrière-plan sera coloré en #DC9F96, une teinte de rouge pâle.*/
+
 .nav-link.active {
     background-color: #DC9F96 !important;
 }
@@ -78,7 +84,7 @@ h1 {
 }
 
 
-
+/*ce code définit des styles visuels pour deux types d'éléments : le premier enfant avec la classe wp-block-group__inner-container aura une bordure inférieure gauche arrondie, tandis que les éléments avec la classe commander auront un arrière-plan, une couleur de texte, des bordures et des coins arrondis spécifiques.*/
 .wp-block-group__inner-container:first-child {
     border-bottom-left-radius: 60px;
 }
@@ -89,10 +95,9 @@ h1 {
     color: #fff;
     border-radius: 5px;
     border: 1px solid #E0B9B4;
-    border-radius: 5px;
 }
 
-
+/*ce code CSS définit des styles visuels spécifiques pour une page identifiée par l'ID 10, en modifiant la couleur de fond du corps de la page ainsi que des cellules de tableau dans cet article pour qu'elles correspondent à la couleur de fond de la page.*/
 body.page-id-10 {
     background-color: #3B8E46 !important;
     color: #fff;
@@ -111,15 +116,9 @@ body.page-id-10 {
     padding-bottom: 60px;
 }
 
+/*ce code CSS définit un style visuel spécifique pour les éléments WordPress qui ont une classe wp-block-cover et une classe has-round-bottom, en leur attribuant une couleur de fond.*/
 .wp-block-cover.has-round-bottom {
     background-color: #ECE2DA !important;
-    /* border-bottom: 4px solid #E3D9D0;
-   border-radius: 0% 0% 15% 15%;
-    -webkit-border-radius: 0% 0% 15% 15%;
-    -moz-border-radius: 0% 0% 15% 15%;
-    -moz-border-radius: 0% 0% 15% 15%;
-    -ms-border-radius: 0% 0% 15% 15%;
-    -o-border-radius: 0% 0% 15% 15%;*/
 }
 
 .pensent {
@@ -138,13 +137,6 @@ body.page-id-10 {
 /*bordure du conteneur des goûts sur page accueil*/
 .gouts {
     background-color: #ECE2DA;
-    /*border-bottom: 4px solid #FFF;
-    border-radius: 0% 0% 15% 15%;
-    -webkit-border-radius: 0% 0% 15% 15%;
-    -moz-border-radius:0% 0% 15% 15%;
-    -moz-border-radius: 0% 0% 15% 15%;
-    -ms-border-radius: 0% 0% 15% 15%;
-    -o-border-radius: 0% 0% 15% 15%;*/
 }
 
 /*images des goûts sur la page accueil*/
@@ -163,12 +155,6 @@ body.page-id-10 {
 .rencontrer {
     background-color: #ECE2DA !important;
     border-bottom: 4px solid #E3D9D0;
-    /* border-radius: 0% 0% 30% 30%;
-    -webkit-border-radius: 0% 0% 30% 30%;
-    -moz-border-radius: 0% 0% 30% 30%;
-    -moz-border-radius: 0% 0% 30% 30%;
-    -ms-border-radius: 0% 0% 30% 30%;
-    -o-border-radius: 0% 0% 30% 30%;*/
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -211,10 +197,9 @@ body.page-id-10 {
     padding: 30px 0px;
 }
 
-.NousRencontrer {
+.rencontrer  {
     background-image: url('http://localhost/wp-content/uploads/2024/01/Group-2.png');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: left;
 }
 
@@ -226,7 +211,10 @@ body.page-id-10 {
     width: 100%;
 }
 
-
+.messageimage{
+    position: relative ;
+    z-index: 1;
+}
 
 .messageimage:after {
     content: "";
@@ -238,7 +226,7 @@ body.page-id-10 {
     position: relative;
     left: -85px;
     bottom: 210px;
-
+    z-index: -1;
 }
 
 #menu-principal li:nth-of-type(1) {
@@ -254,7 +242,6 @@ body.page-id-10 {
 }
 
 form .col-6:nth-of-type(1) {
-    /*background: red;*/
     padding-right: 46px;
     border-right: 1px solid #fff;
 }
@@ -304,31 +291,42 @@ form .col-6:nth-of-type(1) {
     border: none;
 }
 
-input[type=submit] {
-    width: 198px;
-    height: 55px;
+/*classe commander*/
+.btn, .wp-block-button .wp-block-button__link, input[type=submit]{
     border-radius: 5px;
+    outline: none;
+    padding: 1em 2em;
 }
 
-input[type=submit]:hover {
-    background-color: #6d071a !important;
-    color: #fff !important;
+.btn:hover, .wp-block-button .wp-block-button__link:hover, input[type=submit]:hover{
+    background-color: #6d071a;
+    color: #fff;
 }
 
-.boutoncommander a {
-    width: 198px;
-    height: 55px;
-    border-radius: 5px;
+.btn:visited, .wp-block-button .wp-block-button__link:hover:visited{
+    background-color: #6d071a;
+    color: #fff;
     outline: none;
 }
 
-.boutoncommander a:hover {
-    background-color: #6d071a !important;
-    color: #fff !important;
+.productsContainer{
+    max-width: 830px;
+    margin: 34px auto;
+    font-weight: 800;
+    text-transform: uppercase;
+    color:#fff;
 }
 
-.boutoncommander a:visited {
-    background-color: #6d071a !important;
-    color: #fff !important;
-    outline: none;
+.ilspensent{
+    padding: 0px 100px 0px 100px;
+}
+
+.boutoncommande a:hover{
+    background-color: #6d071a!important;
+    color: #fff;
+}
+
+.chezplanty{
+    width:669px;
+    margin: auto;
 }
