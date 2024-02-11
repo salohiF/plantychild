@@ -95,6 +95,7 @@ Lorsque cet élément est actif, son arrière-plan sera coloré en #DC9F96, une 
     color: #fff;
     border-radius: 5px;
     border: 1px solid #E0B9B4;
+    margin-left: 140px;
 }
 
 /*ce code CSS définit des styles visuels spécifiques pour une page identifiée par l'ID 10, en modifiant la couleur de fond du corps de la page ainsi que des cellules de tableau dans cet article pour qu'elles correspondent à la couleur de fond de la page.*/
@@ -129,10 +130,10 @@ body.page-id-10 {
 }
 
 /*bouton commander sur page accueil*/
-.boutoncommande a {
+/*.boutoncommande a {
     background-color: #E0B9B4 !important;
     margin-bottom: 40px;
-}
+}/*
 
 /*bordure du conteneur des goûts sur page accueil*/
 .gouts {
@@ -179,8 +180,13 @@ body.page-id-10 {
 
 }
 
+.formContenaireGauche{
+
+    border-right: 1px solid #fff;
+}
+
 .colonneDroiteCommande {
-    padding-left: 50px;
+    padding-left: 36px;
 
 }
 
@@ -292,11 +298,12 @@ form .col-6:nth-of-type(1) {
 }
 
 /*classe commander*/
-.btn, .wp-block-button .wp-block-button__link, input[type=submit]{
+/*.btn, .wp-block-button .wp-block-button__link,  
     border-radius: 5px;
     outline: none;
     padding: 1em 2em;
 }
+
 
 .btn:hover, .wp-block-button .wp-block-button__link:hover, input[type=submit]:hover{
     background-color: #6d071a;
@@ -307,7 +314,7 @@ form .col-6:nth-of-type(1) {
     background-color: #6d071a;
     color: #fff;
     outline: none;
-}
+}/*
 
 .productsContainer{
     max-width: 830px;
@@ -321,12 +328,57 @@ form .col-6:nth-of-type(1) {
     padding: 0px 100px 0px 100px;
 }
 
-.boutoncommande a:hover{
+/*.boutoncommande a:hover{
     background-color: #6d071a!important;
     color: #fff;
-}
+}*/
 
 .chezplanty{
     width:669px;
     margin: auto;
+}
+
+.commandergouts {
+    max-height: 220px;
+}
+
+/*.btn:hover, .wp-block-button .wp-block-button__link:hover, input[type=submit]:hover{
+    background-color: #6d071a;
+    color: #fff;
+}*/
+
+
+.boutoncommande a{
+    height:55px;
+    width:198px;
+    background-color: #E0B9B4;
+}
+
+input[type=submit]{
+    height:55px;
+    width:198px;
+    background-color: #E0B9B4;
+}
+
+.boutoncommande a:hover{
+background-color: #6d071a;
+color: #fff;
+}
+
+.boutoncommande:hover{
+    background-color: #6d071a;
+    color: #fff;
+}
+
+input[type=submit]:hover{
+    background-color: #6d071a;
+    color: #fff;
+}
+
+.boutoncommande a:visited{
+outline: none;
+}
+
+.boutoncommande a{
+    border-radius: 0px!important;
 }
